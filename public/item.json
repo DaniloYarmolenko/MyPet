@@ -1,0 +1,43 @@
+{
+  "burger": [
+    {
+      "image": "./img/Hamburger_(black_bg).jpg",
+      "title": "123",
+      "price": "10$-20$",
+      "id": 1
+    },
+    {
+      "image": "./img/Hamburger_(black_bg).jpg",
+      "title": "123",
+      "price": "10$-20$",
+      "id": 1
+    },
+    {
+      "image": "./img/Hamburger_(black_bg).jpg",
+      "title": "123",
+      "price": "10$-20$",
+      "id": 1
+    },
+    {
+      "image": "./img/Hamburger_(black_bg).jpg",
+      "title": "123",
+      "price": "10$-20$",
+      "id": 1
+    },
+    {
+      "image": "./img/Hamburger_(black_bg).jpg",
+      "title": "123",
+      "price": "10$-20$",
+      "id": 1
+    }
+  ],
+  "free": [
+
+  ],
+  "drinks": [
+
+  ],
+  "snacks": [
+
+  ]
+}
