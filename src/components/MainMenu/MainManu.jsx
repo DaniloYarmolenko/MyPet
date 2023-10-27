@@ -4,7 +4,7 @@ import Styles from './MainManu.module.css'
 import MoreSettings from "../MoreSettings/MoreSettings";
 
 
-const MainManu = ({renderMainManu}) => {
+const MainManu = ({renderMainManu, setRenderBasketInMenu}) => {
     const [cardData, setCardData] = useState({image: '', title: '', price: ''})
     const card = [
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 1},
@@ -22,7 +22,7 @@ const MainManu = ({renderMainManu}) => {
     ]
     const free = [
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 1},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$',id: 2},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 2},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 3},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 4},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 5},
@@ -35,23 +35,23 @@ const MainManu = ({renderMainManu}) => {
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 12},
     ]
     const drinks = [
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 1},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$',id: 2},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 3},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 4},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 5},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 6},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 7},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 8},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 9},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 10},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 11},
-        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 12},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 1},
+        {image: './img/Hamburger_(black_bg).jpg', title: '12333', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 2},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 3},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 4},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 5},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 6},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 7},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 8},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 9},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 10},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 11},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: {'XS':  '10$', 'S':  '12$', 'M':  '15$', 'L':  '20$'}, id: 12},
     ]
 
     const snaks = [
-        {image: './img/Hamburger_(black_bg).jpg', title: '123f', price: '10$-20$', id: 1},
-        {image: './img/Hamburger_(black_bg).jpg', title: '1231', price: '10$-20$',id: 2},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 1},
+        {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 2},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 3},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 4},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 5},
@@ -63,7 +63,6 @@ const MainManu = ({renderMainManu}) => {
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 11},
         {image: './img/Hamburger_(black_bg).jpg', title: '123', price: '10$-20$', id: 12},
     ]
-
 
 
 
@@ -72,7 +71,7 @@ const MainManu = ({renderMainManu}) => {
     }
 
     const propsUpCard = ({title, image, price}) =>  {
-        return  <MoreSettings title={title} image={image} price={price}/>
+        return  <MoreSettings title={title} image={image} price={price} setRenderBasketInMenu={setRenderBasketInMenu}/>
     }
 
 

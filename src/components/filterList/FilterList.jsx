@@ -22,7 +22,7 @@ const FilterList = ({setRenderMainManu}) => {
                    </div>
                     <FilterItem options={[
                         {value: 'priseLowToHight', name: "LowToHight"},
-                        {value: 'priseHightToLow', name: "LowToHight"}
+                        {value: 'priseHightToLow', name: "HightToLow"}
                     ]} defaultValue={123}/>
                 </div>
             </div>

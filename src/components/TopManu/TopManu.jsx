@@ -8,12 +8,14 @@ import fullBasket from './img/Full Shopping Basket.png'
 import close from './img/Close.png'
 import Styles from './TopManu.module.css'
 import {Link} from "react-router-dom";
+import BasketInMenu from "../BasketInMenu/BasketInMenu";
 
 
-const TopManu = () => {
+const TopManu = ({renderBasketInMenu}) => {
 
     const [isSearch, setIsSearch] = useState(false)
     const [isBasket, setIsBasket] = useState(false)
+    const [openModal, setOpenModal] = useState(false)
 
     const toggleSearch = () => {
         setIsSearch((value) => !value )
@@ -32,10 +34,11 @@ const TopManu = () => {
                 <img className={Styles.logo} src={logo} alt=""/>
                 <div className={Styles.store}>
                     <img src={doorbell} alt=""/>
-                    <img src={isBasket ?fullBasket :basket} alt=""/>
+                    <img onClick={() => setOpenModal(true)} src={isBasket ?fullBasket :basket} alt=""/>
+
                 </div></div>
             </div>
-
+            <BasketInMenu openModal={openModal} setOpenModal={setOpenModal} renderBasketInMenu={renderBasketInMenu} setIsBasket={setIsBasket}/>
         </div>
     );
 };
